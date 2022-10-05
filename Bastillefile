@@ -1,5 +1,5 @@
 ARG java="11
-PKG openjdk"${version}" curl
+PKG curl openjdk"${java}"
 CMD mkdir /usr/local/etc/pwm/
 CMD curl -L -O -C - https://github.com/pwm-project/pwm/releases/download/v2_0_4/pwm-onejar-2.0.4.jar
 CMD cp pwm-onejar-2.0.4.jar /usr/local/etc/pwm
